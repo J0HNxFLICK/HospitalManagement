@@ -14,6 +14,12 @@ mat-card
     padding: 20px 30px;
 }
 
+.HeadingStyle
+{
+    font-weight: bold;
+}
+
+
 
 .ContentContainer
 {
@@ -76,4 +82,11 @@ mat-card-footer>span>a
 .ActionsContainer>button
 {
     justify-content: left;
+}
+
+.InButton
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }

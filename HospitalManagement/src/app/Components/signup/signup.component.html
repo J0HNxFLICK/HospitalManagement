@@ -2,8 +2,8 @@
 
     <mat-card>
         <mat-card-header>
-            <mat-card-title>Sign up</mat-card-title>
-            <mat-card-subtitle>Create your Account</mat-card-subtitle>
+            <mat-card-title class="HeadingStyle">Sign up</mat-card-title>
+            <mat-card-subtitle class="HeadingStyle">Create your Account</mat-card-subtitle>
         </mat-card-header>
         <mat-card-content class="ContentContainer">
             <div class="DataInput">
@@ -20,11 +20,11 @@
         </mat-card-content>
         <mat-card-actions class="ActionsContainer">
             <mat-slide-toggle color="primary">I agree to the Terms and Privacy.</mat-slide-toggle>
-            <button mat-flat-button color="primary">Register</button>
+            <button mat-flat-button color="primary"><div class="InButton"><img src="../../../assets/add-24px.svg" alt="Add"> Register</div></button>
         </mat-card-actions>
 
         <mat-card-footer>
-            <span>Have an account?<a href="#">Sign in!</a></span>
+            <span>Have an account?<a routerLink="/login">Sign in!</a></span>
         </mat-card-footer>
     </mat-card>
 
