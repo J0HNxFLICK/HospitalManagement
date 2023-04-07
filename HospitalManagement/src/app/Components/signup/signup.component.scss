@@ -11,12 +11,25 @@
 mat-card
 {
     width: 500px;
-    padding: 20px 30px;
+    padding: 20px 30px !important;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 3px 6px 1px rgb(176, 176, 176);
 }
 
 .HeadingStyle
 {
     font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.Subtext
+{
+    font-weight: bold;
+    font-size: 20px;
 }
 
 
@@ -42,7 +55,7 @@ mat-card
 
 .DataInput>input
 {
-    width: 95%;
+    width: 90%;
     height: 45px;
     border: none;
     outline: none;

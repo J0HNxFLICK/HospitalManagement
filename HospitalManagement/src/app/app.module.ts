@@ -9,13 +9,15 @@ import {MatCardModule} from '@angular/material/card';
 import { LoginComponent } from './Components/login/login.component';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { DoctorsComponent } from './Components/doctors/doctors.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignupComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    DoctorsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,93 @@
+.TitleContainer
+{
+    margin-bottom: 20px;
+}
+
+.DoctorsList
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Heading
+{
+    font-size: 50px;
+    color: rgb(116, 116, 116);
+}
+
+.Displayer
+{
+    width: 550px;
+}
+
+.Doctor1
+{
+    width: 100%;
+    height : 850px;
+    box-shadow: 0px 5px 15px 8px rgb(217, 217, 217);
+    border-radius: 8px;
+    margin-bottom: 7%;
+}
+
+.ImageContainer
+{
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.DoctorImage
+{
+    height: auto;
+    width: 100%;
+}
+
+.DetailsContainer
+{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40%;
+}
+
+.Name
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.Specilization
+{
+    font-size: 20px;
+    color: rgb(117, 117, 117);
+}
+
+.Socials
+{
+    display: flex;
+    width: 25%;
+    justify-content: space-evenly;
+}
+
+.Socials>img
+{
+    height: 25px;
+}
+
+.Address
+{
+    font-size: 23px;
+    word-wrap: break-word;
+    text-align: center;
+    color: rgb(117, 117, 117);
+}
+
+@media only screen and (max-width:630px)
+{
+    
+}
