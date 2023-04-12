@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { AddAppointmentComponent } from '../add-appointment/add-appointment.component';
+
 
 @Component({
   selector: 'app-doctors',
@@ -6,6 +9,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./doctors.component.scss']
 })
 export class DoctorsComponent {
+
+
+  constructor(private matDialog : MatDialog){}
 
   doctorsData: any = [
     
@@ -22,5 +28,19 @@ export class DoctorsComponent {
     {id: 6, image: '../../../assets/rian-ramirez-rm7rZYdl3rY-unsplash.jpg', name: 'Dr. Juan', specilization: 'Dermatologist'}
 
   ];
+
+  DialogBox(noteData:any)
+{
+  let dialogOpen = this.matDialog.open(AddAppointmentComponent,{
+
+    data: noteData
+
+  });
+
+  // dialogOpen.afterClosed().subscribe((resp:any) => {
+  //   console.log("Dialog was closed");
+  //   this.ColorEvent.emit();
+  // })
+}
 
 }

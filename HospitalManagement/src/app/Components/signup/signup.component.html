@@ -6,22 +6,33 @@
             <mat-card-subtitle class="Subtext">Create your Account</mat-card-subtitle>
         </mat-card-header>
         <mat-card-content class="ContentContainer">
-            <div class="DataInput">
-                <input type="text" placeholder="Name">
-            </div>
 
-            <div class="DataInput">
-                <input type="text" placeholder="Email">
-            </div>
+            <form [formGroup]="registerForm" class="FormContent" (ngSubmit)="Logger()">
 
-            <div class="DataInput">
-                <input type="text" placeholder="Password">
-            </div>
+                <mat-form-field appearance="fill">
+                    <mat-label>Name</mat-label>
+                    <input matInput formControlName="name">
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>email</mat-label>
+                    <input matInput formControlName="email">
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Password</mat-label>
+                    <input matInput formControlName="password">
+                </mat-form-field>
+
+                <div class="bottomPart">
+                    <mat-slide-toggle color="primary" required="true" [(ngModel)]="checked">I agree to the Terms and Privacy.</mat-slide-toggle>
+                    <button type="submit" mat-flat-button color="primary">
+                        <button type="submit" mat-flat-button color="primary" [disabled]="!checked"><div class="InButton"><img src="../../../assets/add-24px.svg" alt="Add"> Register</div></button>
+                    </button>
+                </div>
+            </form>
+
         </mat-card-content>
-        <mat-card-actions class="ActionsContainer">
-            <mat-slide-toggle color="primary">I agree to the Terms and Privacy.</mat-slide-toggle>
-            <button mat-flat-button color="primary"><div class="InButton"><img src="../../../assets/add-24px.svg" alt="Add"> Register</div></button>
-        </mat-card-actions>
 
         <mat-card-footer>
             <span>Have an account?<a routerLink="/login">Sign in!</a></span>

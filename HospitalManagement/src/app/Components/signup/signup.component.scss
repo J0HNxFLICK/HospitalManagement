@@ -37,9 +37,17 @@ mat-card
 .ContentContainer
 {
     display: flex;
+    justify-content: center;
+    // flex-direction: column;
+    height: 380px;
+}
+
+.FormContent
+{
+    display: flex;
     flex-direction: column;
-    height: 220px;
     justify-content: space-evenly;
+    width: 100%;
 }
 
 .DataInput
@@ -102,4 +110,17 @@ mat-card-footer>span>a
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+@media only screen and (max-width:520px) {
+    mat-card {
+        height: 100vh;
+        padding: 10px !important;
+        justify-content: flex-start;
+    }
+
+    mat-card-actions {
+        padding-right: 15px;
+        // align-items: flex-end;
+    }
 }

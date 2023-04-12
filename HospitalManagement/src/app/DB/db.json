@@ -1,0 +1,34 @@
+{
+  "accounts": [
+    {
+      "name": "Nirmal Arun Ashish Kommini",
+      "email": "nirmal.arun.ashish@gmail.com",
+      "password": "Password@123",
+      "id": 1
+    },
+    {
+      "name": "Praveen Kumar",
+      "email": "praveen@gmail.com",
+      "password": "Password",
+      "id": 2
+    },
+    {
+      "name": "Piyush",
+      "email": "piyush@gmail.com",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "name": "Vijaya Grace",
+      "email": "vijaya@gmail.com",
+      "password": "Password",
+      "id": 4
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 5
+    }
+  ]
+}

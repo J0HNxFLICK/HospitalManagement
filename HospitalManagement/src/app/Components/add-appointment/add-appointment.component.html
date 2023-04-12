@@ -1,0 +1,25 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title class="HeadingStyle">Login form</mat-card-title>
+        <mat-card-subtitle class="Subtext">Login to access your Account</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content class="ContentContainer">
+        <div class="DataInput">
+            <input type="text" placeholder="Name">
+        </div>
+
+        <div class="DataInput">
+            <input type="text" placeholder="Email">
+        </div>
+
+    </mat-card-content>
+    <mat-card-actions class="ActionsContainer">
+        <mat-slide-toggle color="primary">Remember me</mat-slide-toggle>
+        <button mat-flat-button color="primary"><div class="InButton"><img src="../../../assets/login.png" alt="Login">Login</div></button>
+    </mat-card-actions>
+
+    <mat-card-footer>
+        <a href="#" class="AnchorTagStyle">Forgot password?</a>
+        <span>Don't have an account?<a routerLink="/signup" class="AnchorTagStyle">Sign up!</a></span>
+    </mat-card-footer>
+</mat-card>
