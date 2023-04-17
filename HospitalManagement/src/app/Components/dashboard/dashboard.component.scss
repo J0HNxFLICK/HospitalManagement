@@ -1,9 +1,66 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+//   mat-toolbar .mat-primary
+//   {
+//     box-sizing: 0px 3px 4px 6px rgb(177, 177, 177) !important;
+//     z-index: 5;
+//   }
+  
+  .example-is-mobile .example-toolbar {
+    position: fixed;
+    /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+    z-index: 2;
+  }
+  
+  h1.example-app-name {
+    margin-left: 8px;
+  }
+  
+  .example-sidenav-container {
+    /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+       causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+    flex: 1;
+  }
+  
+  .example-is-mobile .example-sidenav-container {
+    /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+       `<body>` to be our scrolling element for mobile layouts. */
+    flex: 1 0 auto;
+  }
+
+.ToolBarContainer
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.SearchBarContainer
+{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
 .ToolBar {
     padding: 0% 5%;
     height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: rgb(63,81,181);
+    box-shadow: 0px 3px 8px 6px rgb(193, 192, 192);
 }
 
 .RightIconsCntainer {
@@ -14,7 +71,7 @@
 }
 
 .DataInput {
-    width: 30%;
+    width: 100%;
     height: 50px;
     background-color: rgb(233, 233, 233);
     display: flex;
@@ -31,8 +88,13 @@
     background-color: transparent;
 }
 
-.DataInput:focus-within {
-    box-shadow: 0px 3px 6px 1px rgb(199, 199, 199);
+// .DataInput:focus-within {
+//     box-shadow: 0px 3px 6px 1px rgb(199, 199, 199);
+// }
+
+.MainContentContainer
+{
+    padding: 60px 100px;
 }
 
 .BellIcon {
@@ -43,13 +105,48 @@
     padding: 2% 5%;
 }
 
+.SpaceMaker
+{
+    height: 150px;
+    width: 100%;
+}
+
+.NavItemsContent {
+    display: flex;
+    align-items: center;
+}
+
+mat-sidenav :focus {
+    background-color: rgb(101, 123, 247);
+}
+
+.NavItems p {
+    margin-bottom: 0;
+    margin-top: 0px;
+    margin-left: 30px;
+}
+
+.NavItems img {
+    margin-left: 5px;
+}
+
+mat-sidenav-content {
+    background-color: white;
+}
+
+.MainIcons
+{
+    height: 25px;
+}
 @media only screen and (max-width:630px) {
 
-    .RightIconsCntainer {
+    .RightIconsCntainer 
+    {
         width: 25%;
     }
 
-    .DataInput {
+    .DataInput 
+    {
         width: 65%;
     }
 }

@@ -1,7 +1,7 @@
 mat-card {
-    width: 500px;
+    width: 600px;
     padding: 20px 30px !important;
-    height: 550px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,7 +22,7 @@ mat-card {
 .ContentContainer {
     display: flex;
     flex-direction: column;
-    height: 180px;
+    height: auto;
     justify-content: space-evenly;
 }
 
@@ -34,6 +34,7 @@ mat-card {
     align-items: center;
     justify-content: center;
     border-radius: 20px;
+    margin: 10px 0px;
 }
 
 .DataInput>input {
@@ -83,4 +84,52 @@ mat-card-footer>span {
 
 .InButton>img {
     height: 20px;
+}
+
+.PatientPicSection
+{
+    display: flex;
+    align-items: center;
+}
+
+.ActionTag
+{
+    padding: 0px;
+}
+
+.PicArea
+{
+    margin-right: 20px;
+}
+
+.ListItem.mat-mdc-menu-item
+{
+    justify-content: center !important;
+}
+
+.double
+{
+    width: 48%;
+    text-decoration: none;
+}
+
+.DoubleContainer
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.BottomAction.BottomAction
+{
+    padding: 0px !important;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+    margin-top: 20px !important;
+}
+
+.BottomButtons
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }

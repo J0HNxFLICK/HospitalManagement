@@ -1,25 +1,71 @@
 <mat-card>
     <mat-card-header>
-        <mat-card-title class="HeadingStyle">Login form</mat-card-title>
-        <mat-card-subtitle class="Subtext">Login to access your Account</mat-card-subtitle>
+        <mat-card-title class="HeadingStyle">Add Appointment</mat-card-title>
     </mat-card-header>
     <mat-card-content class="ContentContainer">
+
+        <mat-card-actions class="ActionTag">
+            <div class="PatientPicSection">
+                <div class="PicArea"><img src="{{imageLoc}}" alt=""></div>
+                <button mat-flat-button color="primary" [matMenuTriggerFor]="menu">Select Image</button>
+            </div>
+
+            <mat-menu #menu="matMenu" class="menuItems">
+                <button class="ListItem" mat-menu-item><img #choice1 src="../../../assets/Ellipse -1.png" alt="img1" (click)="ImageSwapper(choice1.src)"></button>
+                <button class="ListItem" mat-menu-item><img #choice2 src="../../../assets/Ellipse -2.png" alt="img2" (click)="ImageSwapper(choice2.src)"></button>
+                <button class="ListItem" mat-menu-item><img #choice3 src="../../../assets/Ellipse -3.png" alt="img3" (click)="ImageSwapper(choice3.src)"></button>
+                <button class="ListItem" mat-menu-item><img #choice4 src="../../../assets/Ellipse -4.png" alt="img4" (click)="ImageSwapper(choice4.src)"></button>
+                <button class="ListItem" mat-menu-item><img #choice5 src="../../../assets/Ellipse -5.png" alt="img5" (click)="ImageSwapper(choice5.src)"></button>
+                <button class="ListItem" mat-menu-item><img #choice6 src="../../../assets/Ellipse -7.png" alt="img6" (click)="ImageSwapper(choice6.src)"></button>
+                <button class="ListItem" mat-menu-item><img #choice7 src="../../../assets/Ellipse -8.png" alt="img7" (click)="ImageSwapper(choice7.src)"></button>
+                <button class="ListItem" mat-menu-item><img #choice8 src="../../../assets/Ellipse -9.png" alt="img8" (click)="ImageSwapper(choice8.src)"></button>
+                <button class="ListItem" mat-menu-item><img #choice9 src="../../../assets/Ellipse_10.png" alt="img9" (click)="ImageSwapper(choice9.src)"></button>
+            </mat-menu>
+        </mat-card-actions>
+
         <div class="DataInput">
-            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Name" value="{{patient.name}}">
         </div>
 
         <div class="DataInput">
-            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Email" value="{{patient.email}}">
+        </div>
+
+        <div class="DataInput">
+            <input type="text" placeholder="Doctor" value="{{doc}}">
+        </div>
+
+        <div class="DataInput">
+            <input type="date" min="{{today | date:'yyyy-MM-dd'}}" [(ngModel)]="date">
+        </div>
+
+        <div class="DataInput">
+            <input type="text" placeholder="Address">
+        </div>
+
+        <div class="DoubleContainer">
+            <div class="DataInput double">
+                <input type="time" placeholder="From" [(ngModel)]="fromTime">
+            </div>
+            <div class="DataInput double">
+                <input type="time" placeholder="To" [(ngModel)]="toTime">
+            </div>
+        </div>
+
+        <div class="DataInput">
+            <input type="text" placeholder="Phone Number" [(ngModel)]="phoneNumber">
+        </div>
+
+        <div class="DataInput">
+            <input type="text" placeholder="Injury" [(ngModel)]="injury">
         </div>
 
     </mat-card-content>
-    <mat-card-actions class="ActionsContainer">
-        <mat-slide-toggle color="primary">Remember me</mat-slide-toggle>
-        <button mat-flat-button color="primary"><div class="InButton"><img src="../../../assets/login.png" alt="Login">Login</div></button>
-    </mat-card-actions>
 
-    <mat-card-footer>
-        <a href="#" class="AnchorTagStyle">Forgot password?</a>
-        <span>Don't have an account?<a routerLink="/signup" class="AnchorTagStyle">Sign up!</a></span>
-    </mat-card-footer>
+    <mat-card-actions class="BottomAction">
+        <div class="BottomButtons">
+            <button mat-flat-button color="warn" (click)="CloseDialog()">Cancel</button>
+            <button mat-flat-button color="primary" (click)="DataCap()">Add Appointment</button>
+        </div>
+    </mat-card-actions>
 </mat-card>

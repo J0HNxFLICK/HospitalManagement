@@ -109,7 +109,17 @@ mat-card-footer>span>a
 {
     display: flex;
     align-items: center;
-    gap: 10px;
+}
+
+.bottomPart
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.bottomPart>button
+{
+    width: 100px;
 }
 
 @media only screen and (max-width:520px) {

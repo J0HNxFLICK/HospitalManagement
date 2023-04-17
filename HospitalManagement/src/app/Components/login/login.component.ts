@@ -3,6 +3,7 @@ import { UserService } from 'src/app/Service/user/user.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
+import { DataShareService } from 'src/app/Service/data-share/data-share.service';
 
 
 @Component({
@@ -14,7 +15,7 @@ export class LoginComponent implements OnInit {
   registerForm!: FormGroup;
   PresentData:any;
 
-  constructor(private userServices: UserService, private formBuilder: FormBuilder, private snackBar:MatSnackBar, private router:Router) { }
+  constructor(private userServices: UserService, private formBuilder: FormBuilder, private snackBar:MatSnackBar, private router:Router, private dataShareService:DataShareService) { }
 
   ngOnInit(): void {
     this.registerForm = this.formBuilder.group({
@@ -42,15 +43,16 @@ export class LoginComponent implements OnInit {
 
         for(let dat of dataIn)
         {
-          if (dat.email === data.email && data.password === data.password)
+          if (dat.email === data.email && dat.password === data.password)
           {
 
-            this.PresentData = dat;
+            // this.PresentData = dat;
             checking = true
-            console.log("checker",this.PresentData);
-            localStorage.setItem("loginId", dat.id);
+            // console.log("checker",this.PresentData);
+            localStorage.setItem("loginData", dat);
             this.snackBar.open("Login Successful", "ok", { duration: 3000 });
 
+            // this.dataShareService.dataInToUnrelated(this.PresentData);
             this.router.navigateByUrl('/dashboard')
           }
 

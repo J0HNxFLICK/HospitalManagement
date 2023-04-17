@@ -18,7 +18,12 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { HttpClientModule } from '@angular/common/http';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
-
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatMenuModule} from '@angular/material/menu';
+import { AppointmentsComponent } from './Components/appointments/appointments.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatIconModule} from '@angular/material/icon';
+import {MatListModule} from '@angular/material/list';
 
 
 @NgModule({
@@ -28,7 +33,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     LoginComponent,
     DashboardComponent,
     DoctorsComponent,
-    AddAppointmentComponent
+    AddAppointmentComponent,
+    AppointmentsComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +50,13 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     MatFormFieldModule,
     MatInputModule,
     HttpClientModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatTooltipModule,
+    MatMenuModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

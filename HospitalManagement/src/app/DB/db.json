@@ -30,5 +30,78 @@
       "password": "",
       "id": 5
     }
+  ],
+  "Doctors": [
+    {
+      "id": 1,
+      "image": "../../../assets/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg",
+      "name": "Dr. When Deez",
+      "specilization": "Physicist"
+    },
+    {
+      "id": 2,
+      "image": "../../../assets/ashkan-forouzani-DPEPYPBZpB8-unsplash.jpg",
+      "name": "Dr. Ajay",
+      "specilization": "Dentist"
+    },
+    {
+      "id": 3,
+      "image": "../../../assets/dalton-ngangi-ZCztndOWdjs-unsplash.jpg",
+      "name": "Dr. Tai Lung",
+      "specilization": "Pediatrist"
+    },
+    {
+      "id": 4,
+      "image": "../../../assets/jc-gellidon-uhXlRnt9dTw-unsplash.jpg",
+      "name": "Dr. Robert Rodrigez",
+      "specilization": "ENT"
+    },
+    {
+      "id": 5,
+      "image": "../../../assets/jonathan-borba-Yui-VjmS8AA-unsplash.jpg",
+      "name": "Dr. Jonathan",
+      "specilization": "Surgeon"
+    },
+    {
+      "id": 6,
+      "image": "../../../assets/rian-ramirez-rm7rZYdl3rY-unsplash.jpg",
+      "name": "Dr. Juan",
+      "specilization": "Dermatologist"
+    }
+  ],
+  "appointments": [
+    {
+      "image": "../../../assets/Ellipse -1.png",
+      "name": "TestName",
+      "email": "TestEmail@gmail.com",
+      "doctor": "TestDoctor",
+      "date": "2023-05-01",
+      "time": "09:00 - 10:00",
+      "phone": "1234567899",
+      "injury": "Fever",
+      "id": 1
+    },
+    {
+      "image": "../../../assets/Ellipse -1.png",
+      "name": "Nirmal Arun Ashish Kommini",
+      "email": "nirmal.arun.ashish@gmail.com",
+      "doctor": "Dr. Ajay",
+      "date": "2023-04-22",
+      "time": "18:35 - 19:35",
+      "phone": "9000759615",
+      "injury": "Tooth Ache",
+      "id": 2
+    },
+    {
+      "image": "../../../assets/Ellipse -1.png",
+      "name": "Nirmal Arun Ashish Kommini",
+      "email": "nirmal.arun.ashish@gmail.com",
+      "doctor": "Dr. Tai Lung",
+      "date": "2023-04-28",
+      "time": "18:41 - 19:41",
+      "phone": "9000759615",
+      "injury": "Malnutrition",
+      "id": 3
+    }
   ]
 }

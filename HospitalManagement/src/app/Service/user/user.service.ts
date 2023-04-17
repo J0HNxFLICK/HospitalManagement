@@ -22,4 +22,25 @@ export class UserService {
     
     return this.httpService.GetService(this.urlCode);
   }
+
+  GetAccDetails(id:any)
+  {
+    this.urlCode = "accounts/"+id;
+
+    return this.httpService.GetService(this.urlCode);
+  }
+
+  GetDoctorsList()
+  {
+    this.urlCode = "Doctors";
+
+    return this.httpService.GetService(this.urlCode);
+  }
+
+  AddToAppointments(appointmentData:any)
+  {
+    this.urlCode = "appointments";
+
+    return this.httpService.PostService(this.urlCode,appointmentData);
+  }
 }
