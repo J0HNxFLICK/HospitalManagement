@@ -23,13 +23,13 @@ export class HttpService {
     return this.httpClient.get(this.baseURL+url)
   }
 
-  PutService()
+  PutService(url:string, newData:any)
   {
-
+    return this.httpClient.put(this.baseURL+url,newData)
   }
 
-  DeleteService()
+  DeleteService(url:string)
   {
-
+    return this.httpClient.delete(this.baseURL+url)
   }
 }

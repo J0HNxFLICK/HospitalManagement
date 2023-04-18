@@ -49,11 +49,13 @@ export class LoginComponent implements OnInit {
             // this.PresentData = dat;
             checking = true
             // console.log("checker",this.PresentData);
-            localStorage.setItem("loginData", dat);
+            localStorage.setItem("loginId", dat.id);
+            console.log(dat.id);
+            
             this.snackBar.open("Login Successful", "ok", { duration: 3000 });
 
             // this.dataShareService.dataInToUnrelated(this.PresentData);
-            this.router.navigateByUrl('/dashboard')
+            this.router.navigateByUrl('/dashboard/doctors')
           }
 
           if(checking == false)

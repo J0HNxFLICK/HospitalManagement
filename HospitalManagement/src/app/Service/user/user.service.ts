@@ -43,4 +43,26 @@ export class UserService {
 
     return this.httpService.PostService(this.urlCode,appointmentData);
   }
+
+  GetAppointmentsList()
+  {
+    this.urlCode = "appointments";
+
+    return this.httpService.GetService(this.urlCode)
+  }
+
+  EditAppointment(newData:any)
+  {
+    this.urlCode = "appointments/"+newData.id;
+
+    return this.httpService.PutService(this.urlCode, newData);
+
+  }
+
+  DeleteAppointment(appData:any)
+  {
+    this.urlCode = "appointments/"+appData;
+
+    return this.httpService.DeleteService(this.urlCode)
+  }
 }

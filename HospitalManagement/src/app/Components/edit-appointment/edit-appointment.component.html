@@ -1,16 +1,16 @@
 <mat-card>
     <mat-card-header>
-        <mat-card-title class="HeadingStyle">Add Appointment</mat-card-title>
+        <mat-card-title class="HeadingStyle">Edit Appointment</mat-card-title>
     </mat-card-header>
     <mat-card-content class="ContentContainer">
 
         <mat-card-actions class="ActionTag">
             <div class="PatientPicSection">
                 <div class="PicArea"><img src="{{imageLoc}}" alt=""></div>
-                <button mat-flat-button color="primary" [matMenuTriggerFor]="menu">Select Image</button>
+                <button mat-flat-button color="primary" [matMenuTriggerFor]="picmenu">Select Image</button>
             </div>
 
-            <mat-menu #menu="matMenu" class="menuItems">
+            <mat-menu #picmenu="matMenu" class="menuItems">
                 <button class="ListItem" mat-menu-item><img #choice1 src="../../../assets/Ellipse -1.png" alt="img1" (click)="ImageSwapper(choice1.src)"></button>
                 <button class="ListItem" mat-menu-item><img #choice2 src="../../../assets/Ellipse -2.png" alt="img2" (click)="ImageSwapper(choice2.src)"></button>
                 <button class="ListItem" mat-menu-item><img #choice3 src="../../../assets/Ellipse -3.png" alt="img3" (click)="ImageSwapper(choice3.src)"></button>
@@ -21,18 +21,19 @@
                 <button class="ListItem" mat-menu-item><img #choice8 src="../../../assets/Ellipse -9.png" alt="img8" (click)="ImageSwapper(choice8.src)"></button>
                 <button class="ListItem" mat-menu-item><img #choice9 src="../../../assets/Ellipse_10.png" alt="img9" (click)="ImageSwapper(choice9.src)"></button>
             </mat-menu>
+            
         </mat-card-actions>
 
         <div class="DataInput">
-            <input type="text" placeholder="Name" value="{{patient.name}}">
+            <input type="text" placeholder="Name" [(ngModel)]="name">
         </div>
 
         <div class="DataInput">
-            <input type="text" placeholder="Email" value="{{patient.email}}">
+            <input type="text" placeholder="Email" [(ngModel)]="email" readonly="readonly">
         </div>
 
         <div class="DataInput">
-            <input type="text" placeholder="Doctor" value="{{doc}}">
+            <input type="text" placeholder="Doctor" value="{{doc}}" readonly="readonly">
         </div>
 
         <div class="DataInput">
@@ -65,7 +66,7 @@
     <mat-card-actions class="BottomAction">
         <div class="BottomButtons">
             <button mat-flat-button color="warn" (click)="CloseDialog()">Cancel</button>
-            <button mat-flat-button color="primary" (click)="DataCap()">Add Appointment</button>
+            <button mat-flat-button color="primary" (click)="DataCap()">Edit Appointment</button>
         </div>
     </mat-card-actions>
 </mat-card>

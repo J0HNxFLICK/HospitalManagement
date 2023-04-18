@@ -39,12 +39,18 @@ export class DashboardComponent implements OnInit, OnDestroy{
     //   this.accData=dataIn;
     // })    
 
+    
+
      this.key = localStorage.getItem("loginId");
+     
 
     this.userService.GetAccDetails(this.key).subscribe((userData) => {
 
       // console.log("dash",userData);
       this.accData = userData;
+      this.dataShareService.dataInToUnrelated(this.accData.email)
+
     })
+
   }
 }  

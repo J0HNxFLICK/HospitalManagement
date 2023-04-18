@@ -26,6 +26,8 @@ export class AddAppointmentComponent implements OnInit{
 
   date:any;
 
+  address:any;
+
   phoneNumber:any;
 
   injury:any;
@@ -64,6 +66,7 @@ export class AddAppointmentComponent implements OnInit{
       email:this.patient.email,
       doctor:this.doc,
       date:this.date,
+      address:this.address,
       time:this.fromTime+" - "+this.toTime,
       phone:this.phoneNumber,
       injury:this.injury

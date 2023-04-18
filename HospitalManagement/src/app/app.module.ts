@@ -24,6 +24,9 @@ import { AppointmentsComponent } from './Components/appointments/appointments.co
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
+import {MatTableModule} from '@angular/material/table';
+import {MatSortModule} from '@angular/material/sort';
+import { EditAppointmentComponent } from './Components/edit-appointment/edit-appointment.component';
 
 
 @NgModule({
@@ -34,7 +37,8 @@ import {MatListModule} from '@angular/material/list';
     DashboardComponent,
     DoctorsComponent,
     AddAppointmentComponent,
-    AppointmentsComponent
+    AppointmentsComponent,
+    EditAppointmentComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +59,9 @@ import {MatListModule} from '@angular/material/list';
     MatMenuModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatTableModule,
+    MatSortModule
     
   ],
   providers: [],

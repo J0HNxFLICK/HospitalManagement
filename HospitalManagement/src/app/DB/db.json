@@ -29,6 +29,12 @@
       "email": "",
       "password": "",
       "id": 5
+    },
+    {
+      "name": "Akash Lnajewar",
+      "email": "akash@gmail.com",
+      "password": "Password",
+      "id": 6
     }
   ],
   "Doctors": [
@@ -71,37 +77,64 @@
   ],
   "appointments": [
     {
-      "image": "../../../assets/Ellipse -1.png",
+      "image": "http://localhost:4200/assets/Ellipse%20-4.png",
       "name": "TestName",
-      "email": "TestEmail@gmail.com",
+      "email": "Email@gmail.com",
       "doctor": "TestDoctor",
       "date": "2023-05-01",
+      "address": "Test Location, Earth",
       "time": "09:00 - 10:00",
       "phone": "1234567899",
       "injury": "Fever",
       "id": 1
     },
     {
-      "image": "../../../assets/Ellipse -1.png",
+      "image": "http://localhost:4200/assets/Ellipse%20-5.png",
       "name": "Nirmal Arun Ashish Kommini",
       "email": "nirmal.arun.ashish@gmail.com",
-      "doctor": "Dr. Ajay",
-      "date": "2023-04-22",
-      "time": "18:35 - 19:35",
+      "doctor": "Dr. Robert Rodrigez",
+      "date": "2023-04-26",
+      "address": "Andhra Pradesh, India, 530017",
+      "time": "14:54 - 15:54",
       "phone": "9000759615",
-      "injury": "Tooth Ache",
-      "id": 2
+      "injury": "Ear Pain",
+      "id": 4
+    },
+    {
+      "image": "http://localhost:4200/assets/Ellipse%20-7.png",
+      "name": "Nirmal Arun Ashish Kommini",
+      "email": "nirmal.arun.ashish@gmail.com",
+      "doctor": "Dr. Tai Lung",
+      "date": "2023-05-01",
+      "address": "Andhra Pradesh, India",
+      "time": "16:59 - 18:59",
+      "phone": "9000759615",
+      "injury": "Too much Weight Loss",
+      "id": 5
     },
     {
       "image": "../../../assets/Ellipse -1.png",
       "name": "Nirmal Arun Ashish Kommini",
       "email": "nirmal.arun.ashish@gmail.com",
-      "doctor": "Dr. Tai Lung",
-      "date": "2023-04-28",
-      "time": "18:41 - 19:41",
+      "doctor": "Dr. Jonathan",
+      "date": "2023-05-31",
+      "address": "Andhra Pradesh, India",
+      "time": "19:24 - 22:24",
       "phone": "9000759615",
-      "injury": "Malnutrition",
-      "id": 3
+      "injury": "Donno",
+      "id": 6
+    },
+    {
+      "image": "http://localhost:4200/assets/Ellipse%20-5.png",
+      "name": "Akash Lnajewar",
+      "email": "akash@gmail.com",
+      "doctor": "Dr. Ajay",
+      "date": "2023-04-27",
+      "address": "ahkgsdjhasvb d",
+      "time": "17:52 - 22:54",
+      "phone": "654351321321",
+      "injury": "Tooth ache",
+      "id": 7
     }
   ]
 }

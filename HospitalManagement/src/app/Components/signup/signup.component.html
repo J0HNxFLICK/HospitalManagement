@@ -24,10 +24,10 @@
                     <input matInput formControlName="password">
                 </mat-form-field>
 
-                <div class="bottomPart">
+                <mat-card-actions class="bottomPart">
                     <mat-slide-toggle color="primary" required="true" [(ngModel)]="checked">I agree to the Terms and Privacy.</mat-slide-toggle>
-                    <button type="submit" mat-flat-button color="primary" [disabled]="!checked"><div class="InButton"><img src="../../../assets/add-24px.svg" alt="Add">Register</div></button>
-                </div>
+                    <button type="submit" mat-flat-button color="primary" [disabled]="checked"><div class="InButton"><img src="../../../assets/add-24px.svg" alt="Add">Register</div></button>
+                </mat-card-actions>
             </form>
 
         </mat-card-content>
