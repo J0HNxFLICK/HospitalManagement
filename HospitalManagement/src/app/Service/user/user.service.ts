@@ -37,6 +37,13 @@ export class UserService {
     return this.httpService.GetService(this.urlCode);
   }
 
+  GetIndividualDoc(idData:any)
+  {
+    this.urlCode = "Doctors/"+idData;
+
+    return this.httpService.GetService(this.urlCode);
+  }
+
   AddToAppointments(appointmentData:any)
   {
     this.urlCode = "appointments";

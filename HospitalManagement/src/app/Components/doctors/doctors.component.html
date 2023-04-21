@@ -11,7 +11,7 @@
             </div>
 
             <div class="DetailsContainer">
-                <span class="Name">{{Doctor.name}}</span>
+                <span class="Name"  (click)="DoctorView(Doctor.id)">{{Doctor.name}}</span>
                 <span class="Specilization">{{Doctor.specilization}}</span>
                 <div class="Socials">
                     <img src="../../../assets/instagram.png" alt="insta">

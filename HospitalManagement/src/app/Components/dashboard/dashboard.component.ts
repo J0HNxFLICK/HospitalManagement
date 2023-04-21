@@ -3,6 +3,10 @@ import { DataShareService } from 'src/app/Service/data-share/data-share.service'
 import { UserService } from 'src/app/Service/user/user.service';
 import {MediaMatcher} from '@angular/cdk/layout';
 import {ChangeDetectorRef} from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { Router } from '@angular/router';
+
+
 
 
 @Component({
@@ -22,7 +26,7 @@ export class DashboardComponent implements OnInit, OnDestroy{
 
   fillerNav = Array.from({length: 50}, (_, i) => `Nav Item ${i + 1}`);
   
-  constructor(private dataShareService:DataShareService, private userService:UserService,changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
+  constructor(private dataShareService:DataShareService, private userService:UserService,changeDetectorRef: ChangeDetectorRef, media: MediaMatcher, private snackBar :MatSnackBar, private router:Router) {
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener)
@@ -52,5 +56,12 @@ export class DashboardComponent implements OnInit, OnDestroy{
 
     })
 
+  }
+
+  Logout()
+  {
+    this.snackBar.open('Logged out', 'ok', {duration:3000});
+    localStorage.removeItem('loginId');
+    this.router.navigateByUrl('/login')
   }
 }  

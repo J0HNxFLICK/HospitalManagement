@@ -27,6 +27,8 @@ import {MatListModule} from '@angular/material/list';
 import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
 import { EditAppointmentComponent } from './Components/edit-appointment/edit-appointment.component';
+import { DoctorViewComponent } from './Components/doctor-view/doctor-view.component';
+import { AuthServiceService } from './Authentication/auth-service.service';
 
 
 @NgModule({
@@ -38,7 +40,8 @@ import { EditAppointmentComponent } from './Components/edit-appointment/edit-app
     DoctorsComponent,
     AddAppointmentComponent,
     AppointmentsComponent,
-    EditAppointmentComponent
+    EditAppointmentComponent,
+    DoctorViewComponent
   ],
   imports: [
     BrowserModule,
@@ -62,9 +65,10 @@ import { EditAppointmentComponent } from './Components/edit-appointment/edit-app
     MatListModule,
     MatTableModule,
     MatSortModule
+
     
   ],
-  providers: [],
+  providers: [AuthServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

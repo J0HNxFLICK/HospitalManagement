@@ -89,19 +89,7 @@
       "id": 1
     },
     {
-      "image": "http://localhost:4200/assets/Ellipse%20-5.png",
-      "name": "Nirmal Arun Ashish Kommini",
-      "email": "nirmal.arun.ashish@gmail.com",
-      "doctor": "Dr. Robert Rodrigez",
-      "date": "2023-04-26",
-      "address": "Andhra Pradesh, India, 530017",
-      "time": "14:54 - 15:54",
-      "phone": "9000759615",
-      "injury": "Ear Pain",
-      "id": 4
-    },
-    {
-      "image": "http://localhost:4200/assets/Ellipse%20-7.png",
+      "image": "http://localhost:4200/assets/Ellipse%20-8.png",
       "name": "Nirmal Arun Ashish Kommini",
       "email": "nirmal.arun.ashish@gmail.com",
       "doctor": "Dr. Tai Lung",
@@ -111,18 +99,6 @@
       "phone": "9000759615",
       "injury": "Too much Weight Loss",
       "id": 5
-    },
-    {
-      "image": "../../../assets/Ellipse -1.png",
-      "name": "Nirmal Arun Ashish Kommini",
-      "email": "nirmal.arun.ashish@gmail.com",
-      "doctor": "Dr. Jonathan",
-      "date": "2023-05-31",
-      "address": "Andhra Pradesh, India",
-      "time": "19:24 - 22:24",
-      "phone": "9000759615",
-      "injury": "Donno",
-      "id": 6
     },
     {
       "image": "http://localhost:4200/assets/Ellipse%20-5.png",
@@ -135,6 +111,30 @@
       "phone": "654351321321",
       "injury": "Tooth ache",
       "id": 7
+    },
+    {
+      "image": "http://localhost:4200/assets/Ellipse%20-5.png",
+      "name": "Nirmal Arun Ashish Kommini",
+      "email": "nirmal.arun.ashish@gmail.com",
+      "doctor": "Dr. Robert Rodrigez",
+      "date": "2023-05-24",
+      "address": "Andhra Pradesh, India",
+      "time": "09:02 - 11:02",
+      "phone": "9000759615",
+      "injury": "Donno",
+      "id": 8
+    },
+    {
+      "image": "http://localhost:4200/assets/Ellipse%20-9.png",
+      "name": "Nirmal Arun Ashish Kommini",
+      "email": "nirmal.arun.ashish@gmail.com",
+      "doctor": "Dr. Juan",
+      "date": "2023-05-31",
+      "address": "Andhra Pradesh, India",
+      "time": "18:18 - 19:18",
+      "phone": "9000759615",
+      "injury": "Itchy skin?",
+      "id": 9
     }
   ]
 }

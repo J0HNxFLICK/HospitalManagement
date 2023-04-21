@@ -138,6 +138,36 @@ mat-sidenav-content {
 {
     height: 25px;
 }
+
+.Details
+{
+    display: flex;
+    flex-direction: column;
+}
+
+// .AccountDetailsContainer
+// {
+//     ::ng-deep{
+//         .mdc-list
+//         {
+//             margin: 30px !important;
+//         }
+//     }
+
+//     padding: 50px;
+    
+// }
+
+.customize+* .mat-menu-panel {
+    background: red;
+  }
+
+.LogOutButton
+{
+    display: flex;
+    justify-content: right;
+}
+
 @media only screen and (max-width:630px) {
 
     .RightIconsCntainer 
